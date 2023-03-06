@@ -16,19 +16,21 @@ function Navbar() {
             <div className="navbar-content">
                 <div>
                     <ul className="nav">
-                        <li><Link className='link' to="/"><HomeIcon  sx={{ fontSize: 32 }}/></Link></li>
-                        <li><Link className='link' to="/account"><AccountCircleIcon sx={{ fontSize: 32 }} /></Link></li>
-                        <li><Link className='link' to="/dashboard"><DashboardIcon sx={{ fontSize: 32 }} /></Link></li>
-                        <li><Link className='link' to="/search"><SearchIcon sx={{ fontSize: 32 }} /></Link></li>
-                        <li><Link className='link' to="/domain"><DomainIcon sx={{ fontSize: 32 }}/></Link></li>
-                        <li><Link className='link' to="/event_note"><EventNoteIcon sx={{ fontSize: 32 }}/></Link></li>
+                        <Link className='link' to="/"><span className='link-nav'><li><HomeIcon sx={{ fontSize: 32 }} />  </li></span></Link>
+                        <Link className='link' to="/account"><span className='link-nav'><li><AccountCircleIcon sx={{ fontSize: 32 }} /></li></span></Link>
+                        <Link className='link' to="/dashboard"><span className='link-nav'><li><DashboardIcon sx={{ fontSize: 32 }} /></li></span></Link>
+                        <Link className='link' to="/search"><span className='link-nav'><li><SearchIcon sx={{ fontSize: 32 }} /></li></span></Link>
+                        <Link className='link' to="/domain"><span className='link-nav'><li><DomainIcon sx={{ fontSize: 32 }} /></li></span></Link>
+                        <Link className='link' to="/event_note"><span className='link-nav'><li><EventNoteIcon sx={{ fontSize: 32 }} /></li></span></Link>
                     </ul>
                 </div>
                 <div className="refresh">
-                    <Link className='link' to='/'><WifiProtectedSetupIcon sx={{ fontSize: 32 }} /></Link>
+                    <ul className="nav">
+                        <Link className='link' to='/'><span className='link-nav'><li><WifiProtectedSetupIcon sx={{ fontSize: 32 }} /></li></span></Link>
+                    </ul>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
